@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kang.cdg_app.user_menu"
+    tools:showIn="@layout/activity_user_menu">
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="RECOMMEND_FOOD"
+        android:id="@+id/rf_btn"
+        android:textSize="30dp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/ic_btn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="INFO_CHANGE"
+        android:id="@+id/ic_btn"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="USER_MENU"
+        android:id="@+id/um_txt"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State :"
+        android:id="@+id/us_txt"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/um_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/us_edit"
+        android:layout_above="@+id/rm_txt"
+        android:layout_alignRight="@+id/rm_edit"
+        android:layout_alignEnd="@+id/rm_edit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remain_Cal :"
+        android:id="@+id/rm_txt"
+        android:layout_below="@+id/us_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rm_edit"
+        android:layout_alignBottom="@+id/rm_txt"
+        android:layout_toRightOf="@+id/rm_txt"
+        android:layout_toEndOf="@+id/rm_txt" />
+</RelativeLayout>

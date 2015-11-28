@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kang.cdg_app.make_account"
+    tools:showIn="@layout/activity_make_account">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account :"
+        android:id="@+id/account"
+        android:layout_marginTop="37dp"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac_edit"
+        android:layout_alignBottom="@+id/account"
+        android:layout_toRightOf="@+id/account"
+        android:layout_toEndOf="@+id/account" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="중복 확인"
+        android:id="@+id/same_btn"
+        android:layout_marginTop="31dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/account"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:id="@+id/pw_txt"
+        android:textSize="30dp"
+        android:layout_below="@+id/same_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pw_edit"
+        android:layout_alignBottom="@+id/pw_txt"
+        android:layout_alignRight="@+id/ac_edit"
+        android:layout_alignEnd="@+id/ac_edit"
+        android:layout_toEndOf="@+id/pw_txt"
+        android:layout_toRightOf="@+id/pw_txt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PW_Check :"
+        android:id="@+id/pw_ck_txt"
+        android:layout_below="@+id/pw_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pw_ck_edit"
+        android:layout_alignTop="@+id/pw_ck_txt"
+        android:layout_alignRight="@+id/pw_edit"
+        android:layout_alignEnd="@+id/pw_edit"
+        android:layout_alignLeft="@+id/pw_edit"
+        android:layout_alignStart="@+id/pw_edit" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="계정 생성"
+        android:id="@+id/ma_btn"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/same_btn"
+        android:layout_alignStart="@+id/same_btn"
+        android:layout_marginBottom="85dp"
+        android:onClick="mac_click" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:id="@+id/name_txt"
+        android:textSize="30dp"
+        android:layout_below="@+id/pw_ck_edit"
+        android:layout_toLeftOf="@+id/pw_ck_edit"
+        android:layout_toStartOf="@+id/pw_ck_edit" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_edit"
+        android:layout_below="@+id/pw_ck_txt"
+        android:layout_alignRight="@+id/pw_ck_edit"
+        android:layout_alignEnd="@+id/pw_ck_edit" />
+</RelativeLayout>

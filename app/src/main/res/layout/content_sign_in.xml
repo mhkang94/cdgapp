@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kang.cdg_app.sign_in"
+    tools:showIn="@layout/activity_sign_in">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account :"
+        android:id="@+id/l_ac_txt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:id="@+id/l_pw_txt"
+        android:layout_below="@+id/l_ac_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:text="로그인"
+        android:id="@+id/log_btn"
+        android:textSize="30dp"
+        android:layout_marginTop="95dp"
+        android:layout_below="@+id/l_pw_txt"
+        android:layout_centerHorizontal="true"
+        android:onClick="um_click" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_ac_edit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/l_ac_txt"
+        android:layout_toRightOf="@+id/l_pw_txt"
+        android:layout_toEndOf="@+id/l_pw_txt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/l_pw_edit"
+        android:layout_below="@+id/l_ac_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/l_ac_edit"
+        android:layout_alignStart="@+id/l_ac_edit" />
+</RelativeLayout>
